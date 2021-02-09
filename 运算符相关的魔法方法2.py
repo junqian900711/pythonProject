@@ -5,3 +5,7 @@ class Person(object):
 
     def eat(self):
         print(self.name + "正在吃东西")
+
+
+p1 = Person('张三', 18)
+p2 = Person('李四', 28)
