@@ -12,7 +12,8 @@ def cal_time(fn):
         s = fn()
         end = time.time()
         print("time is ", end - start)
-        return s #针对的是return x的情况
+        return s  # 针对的是return x的情况
+
     return inner
 
 
@@ -21,8 +22,9 @@ def demo():
     x = 0
     for i in range(1, 1000000000):
         x += 1
-    #print(x)
-    return x #如果是返回值
+    # print(x)
+    return x  # 如果是返回值
+
 
 # @cal_time  # 想用就加，不想要记得删除
 # def foo():
@@ -32,9 +34,8 @@ def demo():
 
 
 # demo() #第三件事;当你再次调用demo函数时，demo函数已经不再是上面的demo
-#foo() #调用
+# foo() #调用
 # print("foo = ", foo)
 
 m = demo()
-print('m 的值是', m)  #m = none
-
+print('m 的值是', m)  # m = none

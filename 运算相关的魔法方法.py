@@ -2,7 +2,7 @@ class Person(object):
 
     def __init__(self, name, age):
         # 在创建对象时，会自动调用这个方法
-        #print('__init__被调用了')
+        # print('__init__被调用了')
         self.name = name
         self.age = age
 
@@ -22,8 +22,8 @@ p2 = Person('zhangsan', 18)
 print('0x%X' % id(p1))
 print('0x%X' % id(p2))
 print(p1 is p2)
-#_-eq__如果不重写，默认比较依然是内存地址/ 请参考重写___eq__方法,获取这个方法的返回值
-print(p1 == p2) #p1 == p2 本质是调用p1.__eq__(p2)
+# _-eq__如果不重写，默认比较依然是内存地址/ 请参考重写___eq__方法,获取这个方法的返回值
+print(p1 == p2)  # p1 == p2 本质是调用p1.__eq__(p2)
 # False
 # False
 
