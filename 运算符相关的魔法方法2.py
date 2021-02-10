@@ -16,6 +16,11 @@ class Person(object):
         return self.age > other.age
 
     # __ge__ greater equal
+    # __lt__ less than
+    # __add__   +
+    # __sub__   -
+    # __mul__   *
+    # __truediv__   /
 
 
 p1 = Person('张三', 18)
@@ -29,3 +34,11 @@ print(p1 == p2)
 print(p1 != p2)
 
 print(p1 > p3)  # '>' not supported between instances of 'Person' and 'Person' /// 调用__gt__ 方法
+
+# str()将对象转换成字符串，会自动调用__str__ 方法
+# 1. str（） 2.打印对象也会调用
+x = str(p1)
+print(x)  # <__main__.Person object at 0x01081E68>  转换成为字符串，默认会转换成类型+ 内存地址
+
+print(int(p1))  # 只调用了__init__,没有调用__str__
+print(p1)  # 调用__str__
